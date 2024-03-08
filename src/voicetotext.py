@@ -41,7 +41,7 @@ def convert_audio_to_text(audio_file):
         return None
 
 def ask_gpt(question):
-    client = openai.OpenAI(api_key="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")
+    client = openai.OpenAI(api_key="OPEN-AI-KEY-HERE")
     assistant = client.beta.assistants.create(
         name="Scam Predictor",
         instructions="You are predicting whether the message is from a scammer or not. The text provided to you is the text from a random phone number. Based off its contents, you are to determine if it has scam intent or not. Simply respond yes or no. Here are common themes seen in scam calls. The caller is mentioning insurance, warranty, social security, bank information, or any other important information sometimes with urgency.",
